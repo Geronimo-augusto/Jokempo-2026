@@ -20,7 +20,7 @@ namespace Jokenpo
 
         private void logar()
         {
-            string players = "";
+            string players = "-1- criar novo jogador";
             int i = 0;
             foreach (Player player in jogadores)
             {
@@ -37,6 +37,9 @@ namespace Jokenpo
         }
         private void criarPlayer()
         {
+            PlayerListLabel.Visible = false;
+            MudarPlayerBox.Visible = false;
+
             NomeLabel.Visible = true;
             PlayerNameBox.Visible = true;
             //PlayerNameBox.Focus();
@@ -55,6 +58,9 @@ namespace Jokenpo
         }
         private async void jogar()
         {
+            attStatistic();
+
+            PlayerListLabel.Visible = false;
             NomeLabel.Visible = false;
             PlayerNameBox.Visible = false;
             MudarPlayerBox.Visible = false;
@@ -75,6 +81,11 @@ namespace Jokenpo
             ContVitLabel.Visible = true;
             JogadasLabel.Visible = true;
             MudarBtn.Visible = true;
+        }
+        private void attStatistic()
+        {
+            JogadasLabel.Text = $"Jogadas totais de: {playerAtual.JogadasCont}";
+            ContVitLabel.Text = $"Vitorias: {playerAtual.VitCont}";
         }
 
         private void dueal(string chosen)
@@ -110,9 +121,8 @@ namespace Jokenpo
                 VitoriaText.Text = "Oh voce perdeu... (^_^)v";
             }
             playerAtual.JogadasCont++;
+            attStatistic();
 
-            JogadasLabel.Text = $"Jogadas totais de: {playerAtual.JogadasCont}";
-            ContVitLabel.Text = $"Vitorias: {playerAtual.VitCont}";
         }
 
         private void WrongChosen_Click(object sender, EventArgs e)
@@ -229,6 +239,10 @@ namespace Jokenpo
                 try
                 {
                     int resp = int.Parse(MudarPlayerBox.Text);
+                    if (resp == -1) {
+                        criarPlayer();
+                        return;
+                    }
                     playerAtual = jogadores[resp];
 
                     e.SuppressKeyPress = true;
