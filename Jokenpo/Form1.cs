@@ -125,17 +125,17 @@ namespace Jokenpo
 
         }
 
-        private void WrongChosen_Click(object sender, EventArgs e)
+        private async void WrongChosen_Click(object sender, EventArgs e)
         {
 
             StartText.Text = "...hm entao ta... TnT";
-            Thread.Sleep(1000);
+            await Task.Delay(1000);
             StartText.Text = "...Saindo em 3... TnT";
-            Thread.Sleep(1000);
+            await Task.Delay(1000);
             StartText.Text = "...Saindo em 2... TnT";
-            Thread.Sleep(1000);
+            await Task.Delay(1000);
             StartText.Text = "...Saindo em 1... TnT";
-            Thread.Sleep(1000);
+            await Task.Delay(1000);
             Application.Exit();
         }
 
