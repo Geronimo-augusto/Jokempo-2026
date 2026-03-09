@@ -20,11 +20,11 @@ namespace Jokenpo
 
         private void logar()
         {
-            string players = "-1- criar novo jogador";
+            string players = "-1. criar novo jogador";
             int i = 0;
             foreach (Player player in jogadores)
             {
-                players += $"\n{i}- {player.Name}";
+                players += $"\n{i}. {player.Name}";
                 i++;
             }
 
@@ -51,7 +51,7 @@ namespace Jokenpo
             YesBtn.Visible = true;
             if (jogadores.Count != 0)
             {
-                PlayerEsLabel.Text = "deseja escolher um dos players que ja existem?";
+                PlayerEsLabel.Text = "deseja escolher um dos players que ja existem? (0_o)";
                 mudar = true;
             }
 
@@ -70,7 +70,7 @@ namespace Jokenpo
             RIGHTCHOSEN.Visible = false;
             WrongChosen.Visible = false;
 
-            StartText.Text = " Entao que o Jogo começe";
+            StartText.Text = " Entao que o Jogo comece v(·ω·)v";
             await Task.Delay(1000);
 
             PlayerLabel.Text = $"Player atual: {playerAtual.Name}";
@@ -251,7 +251,7 @@ namespace Jokenpo
                 }
                 catch
                 {
-                    MessageBox.Show("Jogador nao encontrado, tente denovo");
+                    MessageBox.Show("Jogador nao encontrado, tente denovo v('c')V");
                     MudarPlayerBox.Clear();
                 }
             }
