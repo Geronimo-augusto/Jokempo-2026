@@ -1,3 +1,4 @@
+using Jokempo.Core;
 
 namespace Jokenpo
 {
@@ -6,6 +7,8 @@ namespace Jokenpo
         List<Player> jogadores = new List<Player>();
         Player playerAtual;
         bool mudar = false;
+        JokempoGame jogo = new JokempoGame();
+
         public Form1()
         {
             InitializeComponent();
@@ -90,9 +93,7 @@ namespace Jokenpo
 
         private void dueal(string chosen)
         {
-            Jokenpo jogo = new Jokenpo();
             var respostabot = jogo.Play();
-
 
             EscolhaDoBotText.Visible = true;
             EscolhaDoBotText.Text = respostabot;
@@ -101,10 +102,9 @@ namespace Jokenpo
             ChosenPlayerText.Text = chosen;
             DispotaText.Visible = true;
 
-            bool vitoria = jogo.verific(chosen);
+            bool vitoria = jogo.Verificar(chosen);
 
-
-            if (respostabot.Equals(chosen))
+            if (respostabot == chosen)
             {
                 VitoriaText.Visible = true;
                 VitoriaText.Text = "Empate ∩(·ω·)∩";
@@ -112,17 +112,17 @@ namespace Jokenpo
             else if (vitoria)
             {
                 VitoriaText.Visible = true;
-                VitoriaText.Text = "Parabens Voce ganhou... (Ｔ▽Ｔ)";
+                VitoriaText.Text = "Parabéns você ganhou!";
                 playerAtual.VitCont++;
             }
             else
             {
                 VitoriaText.Visible = true;
-                VitoriaText.Text = "Oh voce perdeu... (^_^)v";
+                VitoriaText.Text = "Oh você perdeu...";
             }
+
             playerAtual.JogadasCont++;
             attStatistic();
-
         }
 
         private async void WrongChosen_Click(object sender, EventArgs e)
