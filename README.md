@@ -153,3 +153,4 @@ Algumas melhorias que podem ser implementadas em versões futuras do projeto:
 - Geronimo Augusto — RM557170  
 - Murilo Cordeiro — RM556727  
 - Vitor Augusto — RM555469
+- Ana Laura — RM554375
