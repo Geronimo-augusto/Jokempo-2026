@@ -1,3 +1,12 @@
+# 👨‍💻 Integrantes do grupo
+
+- Geronimo Augusto — RM557170  
+- Murilo Cordeiro — RM556727  
+- Vitor Augusto — RM555469
+- Ana Laura — RM554375
+
+---
+
 # ✊✋✌️ Jokenpo (Pedra, Papel e Tesoura)
 
 Um jogo clássico de **Jokenpo (Pedra, Papel e Tesoura)** desenvolvido em **C#** utilizando **Windows Forms**.
@@ -145,12 +154,3 @@ Algumas melhorias que podem ser implementadas em versões futuras do projeto:
 - Interface gráfica mais moderna.
 - Histórico de partidas.
 - Melhorias visuais nas transições e feedback das jogadas.
-
----
-
-# 👨‍💻 Integrantes
-
-- Geronimo Augusto — RM557170  
-- Murilo Cordeiro — RM556727  
-- Vitor Augusto — RM555469
-- Ana Laura — RM554375
