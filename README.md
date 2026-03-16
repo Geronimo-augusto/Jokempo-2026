@@ -1,9 +1,9 @@
-# 👨‍💻 Integrantes do grupo
-
-- Geronimo Augusto — RM557170  
-- Murilo Cordeiro — RM556727  
-- Vitor Augusto — RM555469
-- Ana Laura — RM554375
+|  | Integrantes | GitHub | RM |
+|-----------|----------|--------|------|
+| <img src="https://avatars.githubusercontent.com/MuriloCngp" width="60" style="border-radius:50%;"> | Murilo Cordeiro Ferreira | [@MuriloCngp](https://github.com/MuriloCngp) | 556727 |
+| <img src="https://avatars.githubusercontent.com/Geronimo-augusto" width="60" style="border-radius:50%;"> | Geronimo Augusto Nascimento Santos | [@Geronimo-augusto](https://github.com/Geronimo-augusto) | 557170 |
+| <img src="https://avatars.githubusercontent.com/Vitorr-AF" width="60" style="border-radius:50%;"> | Vitor Augusto França de Oliveira | [@Vitorr-AF](https://github.com/Vitorr-AF) | 555469 |
+| <img src="https://avatars.githubusercontent.com/AnaTorresLoureiro" width="60" style="border-radius:50%;"> | Ana Laura Torres Loureiro | [@AnaTorresLoureiro](https://github.com/AnaTorresLoureiro) | 554375 |
 
 ---
 
